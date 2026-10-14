@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Book</title>
+<style>
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px;
+}
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+}
+button:hover {
+    background-color: darkgreen;
+}
+</style>
+</head>
+<body>
+<h1>Book</h1>
+<form action="Add" method="get">
+<input type="number" name="id" placeholder="id" required><br>
+<input type="text" name="product" placeholder="product"> <br>
+<input type="number" name="quantity" placeholder="quantity"> <br>
+<input type="text" name="status" placeholder="status"> <br>
+<button type="submit" name="action">Add</button>
+
+</form>
+
+
+
+</body>
+</html>

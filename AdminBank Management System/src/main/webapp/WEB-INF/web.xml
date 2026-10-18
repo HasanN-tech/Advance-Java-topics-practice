@@ -1,0 +1,78 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Admin Login -->
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.java.controller.AdminLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/als</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Accounts -->
+    <servlet>
+        <servlet-name>ViewAccountsServlet</servlet-name>
+        <servlet-class>com.java.controller.ViewAccountsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewAccountsServlet</servlet-name>
+        <url-pattern>/ViewAccountsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Account -->
+    <servlet>
+        <servlet-name>DeleteAccountServlet</servlet-name>
+        <servlet-class>com.java.controller.DeleteAccountServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteAccountServlet</servlet-name>
+        <url-pattern>/DeleteAccountServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Search Account -->
+    <servlet>
+        <servlet-name>SearchAccountServlet</servlet-name>
+        <servlet-class>com.java.controller.SearchAccountServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchAccountServlet</servlet-name>
+        <url-pattern>/SearchAccountServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Transactions -->
+    <servlet>
+        <servlet-name>ViewTransactionsServlet</servlet-name>
+        <servlet-class>com.java.controller.ViewTransactionsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewTransactionsServlet</servlet-name>
+        <url-pattern>/ViewTransactionsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.java.controller.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

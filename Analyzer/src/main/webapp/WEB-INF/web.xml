@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Analyzer</display-name>
+	
+	<!-- Controller -->
+	<servlet>
+	<servlet-name>RequestHandler</servlet-name>
+	<servlet-class>com.number.analyzer.RequestHandler</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>RequestHandler</servlet-name>
+	<url-pattern>/controller</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Palindrome -->
+	<servlet>
+	<servlet-name>Palindrome</servlet-name>
+	<servlet-class>com.number.analyzer.Palindrome</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Palindrome</servlet-name>
+	<url-pattern>/palindrome</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Prime -->
+	<servlet>
+	<servlet-name>Prime</servlet-name>
+	<servlet-class>com.number.analyzer.Prime</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Prime</servlet-name>
+	<url-pattern>/prime</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Spy -->
+	<servlet>
+	<servlet-name>Spy</servlet-name>
+	<servlet-class>com.number.analyzer.Spy</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Spy</servlet-name>
+	<url-pattern>/spy</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Even Odd -->
+	<servlet>
+	<servlet-name>EvenOdd</servlet-name>
+	<servlet-class>com.number.analyzer.EvenOdd</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>EvenOdd</servlet-name>
+	<url-pattern>/evenOdd</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.xhtml</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.xhtml</welcome-file>
+	</welcome-file-list>
+</web-app>

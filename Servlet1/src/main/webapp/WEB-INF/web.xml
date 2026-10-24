@@ -1,0 +1,130 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.questions.lab.UserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- Employee Question -->
+    <servlet>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <servlet-class>com.questions.lab.EmployeeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <url-pattern>/emp</url-pattern>
+    </servlet-mapping>
+	
+	
+	<!--Company Website  --> 
+	<context-param>
+	<param-name>websiteName</param-name>
+	<param-value>SmartShop</param-value>
+	</context-param>
+	
+	<context-param>
+	<param-name>companyName</param-name>
+	<param-value>Naresh IT</param-value>
+	</context-param>
+	
+	<context-param>
+	<param-name>customerCare</param-name>
+	<param-value>support@smartshop.com</param-value>
+	</context-param>
+	
+	<servlet>
+	<servlet-name>CompanyServlet</servlet-name>
+	<servlet-class>com.questions.lab.CompanyServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>CompanyServlet</servlet-name>
+	<url-pattern>/info</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Bank Branch Info -->
+	<servlet>
+	<servlet-name>BankInfoServlet</servlet-name>
+	<servlet-class>com.questions.lab.BankInfoServlet</servlet-class>
+	
+	<init-param>
+	<param-name>BranchName</param-name>
+	<param-value>Ameerpet Branch</param-value>
+	</init-param>
+	
+	<init-param>
+	<param-name>BranchManager</param-name>
+	<param-value>Ramesh Kumar</param-value>
+	</init-param>
+	
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>BankInfoServlet</servlet-name>
+	<url-pattern>/BankInfo</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- College Question -->
+	<context-param>
+	<param-name>clgName</param-name>
+	<param-value>IIT Jamshedpur</param-value>
+	</context-param>
+	
+	<servlet>
+	<servlet-name>CollegeServlet</servlet-name>
+	<servlet-class>com.questions.lab.CollegeServlet</servlet-class>
+	
+	<init-param>
+	<param-name>deptName</param-name>
+	<param-value>Computer Science</param-value>
+	</init-param>
+	
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>CollegeServlet</servlet-name>
+	<url-pattern>/clgInfo</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Library Question -->
+	<context-param>
+	<param-name>libName</param-name>
+	<param-value>Ever Green Library</param-value>
+	</context-param>
+	
+	<servlet>
+	<servlet-name>LibraryServlet</servlet-name>
+	<servlet-class>com.questions.lab.LibraryServlet</servlet-class>
+	
+	<init-param>
+	<param-name>secName</param-name>
+	<param-value>Computer Science</param-value>
+	</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>LibraryServlet</servlet-name>
+	<url-pattern>/lib</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Application 01 -->
+	<servlet>
+	<servlet-name>Service</servlet-name>
+	<servlet-class>com.java.servlets.Service</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>Service</servlet-name>
+	<url-pattern>/app</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
